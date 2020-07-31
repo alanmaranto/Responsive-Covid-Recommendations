@@ -7,14 +7,14 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        {covidRecommendations.map(({ id, recommendation, image, author }) => (
+        {covidRecommendations.map(({ id, recommendation, image }) => (
           <MedicalRecommendCard
             key={id}
             recommendation={recommendation}
             image={image}
-            author={author}
           />
         ))}
+        <span style={{ fontSize: "10px", color: "#FFF" }}>Icons made by Freepik perfect from www.flaticon.com</span>
       </div>
     </div>
   );
